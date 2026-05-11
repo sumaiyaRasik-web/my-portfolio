@@ -2,11 +2,6 @@ body {
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
 }
-
-section {
-  padding: 60px 0;
-}
-
 h2 {
   font-weight: bold;
   margin-bottom: 30px;
@@ -104,5 +99,499 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+#theme-toggle {
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #aebbbd;
+    color: white;
+    font-size: 16px;
+}
+.dark {
+    background-color: #111827 !important;
+    color: white !important;
+}
+
+.dark section {
+    background-color: #111827 !important;
+    color: white !important;
+}
+
+.dark nav {
+    background-color: #1f2937 !important;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark p,
+.dark a {
+    color: white !important;
+}
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark p,
+.dark span,
+.dark a,
+.dark li {
+    color: white !important;
+}
+.project-card {
+    border-radius: 15px;
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+.bar {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.bar div {
+    height: 100%;
+    width: 0;
+    border-radius: 20px;
+    background: #34c0d3;
+}
+
+/* Python */
+.python {
+    animation: python-fill 2s forwards;
+}
+
+@keyframes python-fill {
+    to {
+        width: 90%;
+    }
+}
+
+/* HTML */
+.html {
+    animation: html-fill 2s forwards;
+}
+
+@keyframes html-fill {
+    to {
+        width: 100%;
+    }
+}
+
+/* CSS */
+.css {
+    animation: css-fill 2s forwards;
+}
+
+@keyframes css-fill {
+    to {
+        width: 100%;
+    }
+}
+/* JavaScript */
+.javascript {
+    animation: javascript-fill 2s forwards;
+}
+
+@keyframes javascript-fill {
+    to {
+        width: 75%;
+    }
+}
+
+/* MySQL */
+.mysql {
+    animation: mysql-fill 2s forwards;
+}
+
+@keyframes mysql-fill {
+    to {
+        width: 70%;
+    }
+}
+
+/* Adobe Photoshop */
+.photoshop {
+    animation: photoshop-fill 2s forwards;
+}
+
+@keyframes photoshop-fill {
+    to {
+        width: 95%;
+    }
+}
+
+/* Adobe Illustrator */
+.illustrator {
+    animation: illustrator-fill 2s forwards;
+}
+
+@keyframes illustrator-fill {
+    to {
+        width: 85%;
+    }
+}
+
+/* WordPress */
+.wordpress {
+    animation: wordpress-fill 2s forwards;
+}
+
+@keyframes wordpress-fill {
+    to {
+        width: 75%;
+    }
+}
+
+/* Database Management */
+.database {
+    animation: database-fill 2s forwards;
+}
+
+@keyframes database-fill {
+    to {
+        width: 85%;
+    }
+}
+
+/* MS Office */
+.msoffice {
+    animation: msoffice-fill 2s forwards;
+}
+
+@keyframes msoffice-fill {
+    to {
+        width: 100%;
+    }
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skill-name {
+  font-weight: 600;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  display: block;
+}
+.bar {
+  width: 100%;
+  max-width: 200px;
+  height: 10px;
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+.skill {
+  text-align: center;
+}
+.skill-name {
+  white-space: nowrap;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+.bar {
+  width: 100%;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  overflow: hidden;
+  margin-top: 10px;
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+}
+.bar div {
+  height: 100%;
+  width: 0;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff, #00c6ff);
+  box-shadow: 0 0 12px   rgba(0, 198, 255, 0.6);
+  transition: all 0.3s ease;
+}
+.skill {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px;
+  transition: 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+.skill:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+.skill-name {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 8px rgba(0, 198, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 18px rgba(0, 18px, rgba(0, 198, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 8px rgba(0, 198, 255, 0.4);
+  }
+}
+.bar div.animate {
+  animation: glow 2s infinite;
+}
+#skills .card {
+  border: none;
+  background: #fff;
+}
+/* ===== Modern Skill Cards ===== */
+
+.skill-card {
+  border: none;
+  border-radius: 20px;
+  padding: 25px;
+  background: #ffffff;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+}
+
+/* ===== Skill Icons ===== */
+
+.skill-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.4s ease;
+}
+
+.skill-card:hover .skill-icon {
+  transform: scale(1.15) rotate(5deg);
+}
+
+/* ===== Skill Name ===== */
+
+.skill-name {
+  font-weight: 600;
+  margin-bottom: 15px;
+  white-space: nowrap;
+}
+
+/* ===== Bar Wrapper ===== */
+
+.bar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ===== Progress Bar ===== */
+
+.bar {
+  width: 100%;
+  height: 12px;
+  background: rgba(0,0,0,0.08);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+/* ===== Animated Bar ===== */
+
+.bar div {
+  height: 100%;
+  width: 0;
+  border-radius: 50px;
+  background: linear-gradient(
+    90deg,
+    #00c6ff,
+    #0072ff,
+    #00c6ff
+  );
+  background-size: 200% auto;
+  box-shadow: 0 0 15px rgba(0,198,255,0.7);
+  animation: gradientMove 3s linear infinite;
+}
+
+/* ===== Percentage ===== */
+
+.percent {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0072ff;
+  min-width: 45px;
+}
+
+/* ===== Gradient Animation ===== */
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 200%;
+  }
+}
+.hero {
+  padding: 60px 0;
+}
+
+.hero img {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
+}
+
+.hero-title {
+  animation: fadeUp 1.2s ease-in-out;
+}
+
+.hero-text {
+  animation: fadeUp 1.6s ease-in-out;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.glow-btn {
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.glow-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(13, 110, 253, 0.7),
+              0 0 30px rgba(13, 110, 253, 0.5)
+}
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+h1, h2, h3, h4 {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+p {
+  font-size: 1.05rem;
+  color: #eaeaea;
+}
+.about-card {
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s ease;
+  background: #ffffff;
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.about-avatar {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #b7cff5, #f9f9fc);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cta-section {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0d6efd, #020f22);
+}
+
+/* floating gradient blobs */
+.cta-section::before,
+.cta-section::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+  animation: floatGradient 8s infinite ease-in-out;
+}
+
+.cta-section::before {
+  background: #6c63ff;
+  top: -80px;
+  left: -100px;
+}
+
+.cta-section::after {
+  background: #00d4ff;
+  bottom: -100px;
+  right: -80px;
+  animation-delay: 2s;
+}
+
+@keyframes floatGradient {
+  0% {
+    transform: translateY(0px) translateX(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-30px) translateX(20px) scale(1.1);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px) scale(1);
+  }
+}
+.pulse-btn {
+  position: relative;
+  animation: pulse 1.8s infinite;
+}
+
+/* pulse effect */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+  }
+
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
 }
